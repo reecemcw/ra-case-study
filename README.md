@@ -1,4 +1,12 @@
-Welcome to your new dbt project!
+dbt project acting on Stack Overflow data (publicly available)
+
+- Datasets were cloned to Google BigQuery
+- dbt instance linked with BQ Project
+- dbt transformation applied to subsisting datasets (as per Data Schema and planned hierarchy)
+- resulting dbt transfromation piped to Looker instance for visualisation
+
+
+
 
 ### Using the starter project
 
