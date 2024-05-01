@@ -1,13 +1,7 @@
 
-/*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml
+{{ config(materialized='view') }}
 
-    Try changing "table" to "view" below
-*/
-
-{{ config(materialized='table') }}
+-- Step 1: Calculate 
 
 with filtered_questions as (
     select
@@ -15,7 +9,7 @@ with filtered_questions as (
     from `ra-case-study.so_public.posts_questions`
     where accepted_answer_id is null
 ),
-
+-- 
 -- Step 2: Calculate PostAge in months
 calculated_post_age as (
     select
@@ -29,6 +23,7 @@ calculated_post_age as (
 -- Step 3: Final select statement to create the product table
 select
     id AS PostID,
+    post_type_id AS PostTypeID,
     title AS PostTitle,
     answer_count AS PostAnswers,
     comment_count AS PostComments,
