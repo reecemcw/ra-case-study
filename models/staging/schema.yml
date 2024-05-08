@@ -1,0 +1,9 @@
+version: 2
+models: 
+  - name: stg_stackoverflow_posts
+    description: "This table stores post data"
+    columns:
+    - name: id
+      description: "primary key"
+
+# TODO - Update all schemas

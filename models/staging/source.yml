@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: src_bq
+    schema: so_public
+    database: ra-case-study
+
+    tables:
+      - name: stackoverflow_posts
+      - name: badges
+      - name: comments
+      - name: users
+      - name: votes
+      - name: posts_answers
+      - name: posts_questions 
