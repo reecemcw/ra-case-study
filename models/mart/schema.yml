@@ -1,0 +1,4 @@
+version: 2
+models:
+    - name: dimPost
+      description: contains post information for posts submitted to Stack Overflow 
