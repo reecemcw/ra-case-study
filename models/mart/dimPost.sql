@@ -11,6 +11,8 @@ SELECT
     -- stg_stackoverflow_posts.score AS post_score,
     stg_stackoverflow_posts.title AS post_title,
     stg_stackoverflow_posts.tags AS post_tags,
+    -- SPLIT(tags,'|') AS TechnologyName,
+    -- COUNT(*) AS Count
     -- stg_stackoverflow_posts.accepted_answer_id AS post_accepted_answers,
     -- stg_stackoverflow_posts.answer_count AS post_answers,
     -- stg_stackoverflow_posts.comment_count AS post_comments,
